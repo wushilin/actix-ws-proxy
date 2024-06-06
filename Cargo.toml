@@ -1,0 +1,25 @@
+[package]
+name = "actix-ws-proxy"
+version = "0.1.1"
+edition = "2021"
+authors = ["stillinbeta"]
+description = "A websocket proxy for actix_web"
+readme = "README.md"
+repository = "https://git.sr.ht/~liz/actix-ws-proxy"
+license = "MIT"
+keywords = ["actix", "websockets", "proxy"]
+categories = ["web-programming::websocket"]
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix = "0.13.1"
+actix-web = "4"
+actix-web-actors = "4"
+awc = { version = "3.2.0", features = ["openssl"] }
+futures = "0.3.30"
+bytes = "1.5.0"
+
+[dev-dependencies]
+portpicker = "0.1.1"
